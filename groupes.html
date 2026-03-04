@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>GLAMIX Entertainment</title>
+  <style>
+    /* ===== FOND ANIMÉ ===== */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background: linear-gradient(-45deg, #4b0082, #8a2be2, #ff69b4, #1a1a2e);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    /* ===== HEADER ===== */
+    header h1 {
+      margin: 30px 0 20px 0;
+      font-size: 3em;
+      background: linear-gradient(90deg, #ff69b4, #8a2be2, #4b0082);
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: holoText 3s ease infinite;
+    }
+
+    @keyframes holoText {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    /* ===== NAVIGATION BOUTONS NÉON ===== */
+    nav {
+      margin-bottom: 50px;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 12px 25px;
+      margin: 10px;
+      border: 2px solid silver;
+      border-radius: 12px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 0 10px silver, 0 0 20px silver, 0 0 30px silver;
+    }
+
+    .btn:hover {
+      background: silver;
+      color: black;
+      box-shadow: 0 0 20px silver, 0 0 30px silver, 0 0 40px silver;
+    }
+
+    /* ===== MESSAGE ===== */
+    .message {
+      font-size: 1.8em;
+      margin-top: 50px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff69b4, #8a2be2, #4b0082);
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: holoText 3s ease infinite;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>👑 GLAMIX Entertainment</h1>
+    <nav>
+      <a href="GLAMIX.Entertainment.html" class="btn">Accueil</a>
+      <a href="annonces.html" class="btn">Annonces</a>
+      <a href="contact.html" class="btn">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="message">💎 Il n’y a pas encore de groupes pour le moment, mais restez connectés ! ✨</p>
+  </main>
+</body>
+</html>
